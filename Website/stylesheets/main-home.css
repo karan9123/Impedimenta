@@ -1,0 +1,76 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.graphic{
+    background-color: #d9ded5;
+    height: 400px;
+    width: 400px;
+    margin: 30px 30px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic svg{
+    z-index: 2;
+    padding-top: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+.home p{
+    margin: 30px 30px;
+    padding-left: 20px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 125px;
+    font-size: 2rem;
+    height: 400px;
+    width: 400px;
+    white-space: normal;
+    color: black;
+}
+
+.border-section-1{
+    z-index: 0;
+}
+
+.graphic-bg{
+    position: absolute;
+    z-index:0;
+    height: 350px;
+    width: 350px;
+    padding: 95px;
+    border-radius: 30px;
+    background-image: url("../background-tiling.png");
+    background-repeat: repeat;
+}
+
+.graphic-bg-plain{
+    position: absolute;
+    z-index: 1;
+    height: 160px;
+    width: 160px;
+    border-radius: 30px;
+    background-color: #3b3a39;
+}
+
+@media (max-width: 1000px){
+    .home{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .border-section-1{
+        display: none;
+    }
+}

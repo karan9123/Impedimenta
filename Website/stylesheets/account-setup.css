@@ -1,0 +1,169 @@
+.new-account-container{
+    margin-top: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 90px;
+    grid-template-areas:    "trap fill1"
+                            "sec sec";
+}
+
+#pf-icon{
+    grid-area: trap;
+    padding: 0px 105px;
+    align-self: center;
+    justify-self: center;
+    height: 90px;
+    background-image: url('../page-clip.svg');
+    background-repeat: no-repeat;
+    background-size: 300px 90px;
+}
+
+.set-up-section{
+    width: 100%;
+    height: 100%;
+    grid-area: sec;
+    background-color: #d9ded5;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100px 75px 75px 75px 75px 75px;
+    grid-template-areas:    "header header header" 
+                            "fname lname ." 
+                            "address address address"
+                            "city zip state" 
+                            "country phone email"
+                            "pass pass-con .";
+    column-gap: 10px;
+}
+
+.account-info{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    margin-left: 30px;
+}
+
+.account-info input{
+    width: 90%;
+    color:white;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #9b9b9b;
+    background-color: transparent;
+    transition: border-color 0.2s;
+}
+
+:focus::placeholder{
+    color: transparent;
+}
+
+.account-info input:focus, .account-info input:focus{
+    border-color: #f2545b;
+}
+
+.account-set-up-header{
+    grid-area: header;
+    align-self: center;
+    margin-left: 50px;
+}
+
+#a-fname{
+    grid-area: fname;
+}
+
+#a-lname{
+    grid-area: lname;
+}
+
+#a-address{
+    grid-area: address;
+}
+
+#a-city{
+    grid-area: city;
+}
+
+#a-zip{
+    grid-area: zip;
+}
+
+#a-state{
+    grid-area: state;
+}
+
+#a-country{
+    grid-area: country;
+}
+
+#a-phone{
+    grid-area: phone;
+}
+
+#a-email{
+    grid-area: email;
+}
+
+#a-pass{
+    grid-area: pass;
+}
+
+#a-pass-con{
+    grid-area: pass-con;
+}
+
+#filler-1{
+    grid-area: fill1;
+}
+
+#mask4{
+    border-top: 4px solid rgba(0, 0, 0, .1);
+    border-right: 4px solid rgba(0, 0, 0, .1);;
+    border-left: 4px solid rgba(0, 0, 0, .1);;
+    position: absolute;
+    z-index: -2;
+    margin: 20px;
+    width: 100%;
+    height: 80%;
+    
+    -webkit-mask-image: linear-gradient(rgba(1, 1, 1, .3), transparent);
+    mask-image: linear-gradient((1, 1, 1, .3), transparent);
+}
+
+.tile{
+    z-index: 2;
+    height: 100%;
+    background-image: url("../background-tiling.png");
+    background-repeat: repeat;
+}
+
+.submit-btn{
+    color: black;
+    display: block;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #f2545b;
+    font-size: 1.5rem;
+}
+
+.submit-btn:hover{
+    background-color: #bd4046;
+}
+
+@media (max-width: 1000px){
+    .set-up-section{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 100px 75px 75px 75px 75px 75px 75px;
+        grid-template-areas:    "header header" 
+                                "fname lname" 
+                                "address address"
+                                "city zip" 
+                                "country state"
+                                "phone email"
+                                "pass pass-con";
+        column-gap: 10px;
+    }
+}

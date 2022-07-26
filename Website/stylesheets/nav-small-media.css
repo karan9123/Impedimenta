@@ -1,0 +1,123 @@
+@media (max-width: 1000px){
+    #s-btn{
+        display: none;
+    }
+    
+    #b-btn{
+        display: none;
+    }
+
+    .mb-links{
+        display: none;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+    
+    .toggle-button:hover{
+        background-color: #bd4046;
+    }
+    
+    #bar-1.active{
+        display: none;
+    }
+
+    #bar-2.active{
+        transform: translateX(-3px) rotate(45deg) translateX(4.5px);
+        width: 30px;
+    }
+
+    #bar-3.active{
+        transform: translateX(-3px) rotate(-45deg) translateX(4.5px);
+        width: 30px;
+    }
+
+    .media-small.active{
+        text-transform: uppercase;
+        display: grid;
+        top: 0;
+        right: 0;
+        position: fixed;
+        background-color: #234c5c;
+        width: 100%;
+        max-width: 600px;
+        z-index: 3;
+
+        grid-template-columns: auto;
+        grid-template-rows: 100px auto 50px auto auto;
+    
+        grid-template-areas: "logo" 
+                            "nav" 
+                            "none"
+                            "sign"
+                            "buy";
+    }
+
+    .ms-logo{
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        grid-area: logo;
+    }
+
+    .ms-links{
+        grid-area: nav;
+    }
+
+    .ms-links ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .n-btn{
+        list-style: none;
+        display: flex;
+        padding: 20px 2.5rem;
+        margin: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .n-btn:hover{
+        background-color: #1e3f4d;
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+        transition:.3s;
+    }
+
+    #ss-btn{
+        display: block;
+        grid-area: sign;
+        justify-self: stretch;
+        align-self: center;
+        text-align: center;
+        padding: 20px 2.5rem;
+        margin: 15px;
+        border-radius: 10px;
+        background-color: #8c5e58;
+        cursor: pointer;
+    }
+
+    #sb-btn{
+        display: block;
+        grid-area: buy;
+        justify-self: stretch;
+        align-self: center;
+        text-align: center;
+        padding: 20px 2.5rem;
+        margin: 20px 15px;
+        border-radius: 10px;
+        background-color: #f2545b;
+        cursor: pointer;
+    }
+
+    #ss-btn:hover{
+        background-color: #704a46;
+    }
+
+    #sb-btn:hover{
+        background-color: #bd4046;
+    }
+}

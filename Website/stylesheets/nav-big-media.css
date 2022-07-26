@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: #FFF;
+    white-space: nowrap;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f7f0;
+}
+
+.media-big{
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 100px 200px auto 115px 115px 20px;
+    grid-template-rows: 100px;
+
+    grid-template-areas: "logo header nav sign buy none";
+
+    background-color: #19323c; 
+    color: #FFF;
+    z-index: 3;
+}
+
+.mb-logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+
+.mb-header {
+    grid-area: header;
+    justify-self: start;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.mb-links{
+    margin: 0;
+    padding: 0;
+    grid-area: nav;
+    align-self: center;
+}
+
+#s-btn{
+    display: block;
+    grid-area: sign;
+    justify-self: center;
+    align-self: center;
+
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #8c5e58;
+    cursor: pointer;
+}
+
+#b-btn{
+    display: block;
+    grid-area: buy;
+    justify-self: center;
+    align-self: center;
+
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f2545b;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#s-btn:hover{
+    background-color: #704a46;
+}
+
+#b-btn:hover{
+    background-color: #bd4046;
+}
+
+.mb-links ul {
+    margin: 0;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.mb-links li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.mb-links a{
+    width: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom: transparent;
+    text-decoration: none;
+    color: #FFF;
+    padding: 5px 0;
+    margin: 1rem 1.75vw;
+}
+
+.mb-links a:hover{
+    margin: 1rem 0;
+    padding: 5px 1.75vw;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #bd4046;
+    transition: all .5s;
+}
+
+.media-small{
+    display: none;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 16px;
+    padding: 10px;
+    background-color: #f2545b;
+
+    z-index: 4;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 25px;
+    margin: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    z-index: 4;
+}

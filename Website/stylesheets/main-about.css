@@ -1,0 +1,37 @@
+.about-text{
+    background-color: #234c5c;
+    width: 900px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title{
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    top: 1790px;
+    color:black;
+    border-bottom: 3px solid #9fa195;
+}
+
+.about-text p{
+    white-space: normal;
+    margin: 10px 40px;
+}
+
+@media (max-width: 1000px){
+    .about-text{
+        width: 90%;
+    }
+    
+    .about-title{
+        top: 2500px;
+    }
+}

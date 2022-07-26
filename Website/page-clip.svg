@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 75">
+  <defs>
+      <style>
+         .cls-1{fill:#d9ded5;}
+      </style>
+  </defs>
+  <g id="page-clip">
+    <path fill="#d9ded5" class="cls-1" d="m 50,0 h 150 l 50,75 H 0 Z" />
+  </g>
+</svg>
